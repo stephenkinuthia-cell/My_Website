@@ -38,13 +38,13 @@ This project showcases my **skills, education, experiences, certifications, and 
 
 
 ## 📂 Folder Structure
-portfolio-website/
+portfolio-website/ 
 │
-├── index.html # Main website file
-├── style.css # Styling
-├── script.js # Interactivity (nav, burger menu, etc.)
-├── images/ # Logos, photos, and icons
-└── README.md # Project documentation
+├── index.html # Main website file 
+├── style.css # Styling 
+├── script.js # Interactivity (nav, burger menu, etc.) 
+├── images/ # Logos, photos, and icons 
+└── README.md # Project documentation 
 
 
 
