@@ -57,6 +57,9 @@ To redeploy after changes:
 3. Refresh the live site.  
 
 
+## 🙌 Special Thanks  
+
+A heartfelt thank you to [**Teach2Give**](https://github.com/Teach2Give) and especially [**Brian Kemboi**](https://github.com/kemboi590) who is my trainer for invaluable guidance, mentorship, and support throughout this project. Your contribution is playing a big role in helping me learn and grow as a developer.  
 
 ## 📬 Contact Me
 
