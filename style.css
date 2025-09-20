@@ -45,6 +45,7 @@
     font-size: 20px;
 }
 
+/* Hero Section */
 #hero{
     display: flex;
     justify-content: space-evenly;
@@ -80,12 +81,12 @@
 
 .hero-text h2 {
   font-size: 2rem;
-  margin-bottom: 15px; /* space below heading */
+  margin-bottom: 15px; 
 }
 
 .hero-text p {
   font-size: 1.2rem;
-  margin-bottom: 20px; /* space below paragraph */
+  margin-bottom: 20px; 
   color: #555;
 }
 
@@ -110,6 +111,7 @@
     color: white;
     padding: 15px;
 }
+
 /* About Section */
 #about {
   display: flex;
@@ -120,7 +122,7 @@
   background: linear-gradient(135deg, #f9f9f9, #eef7f2);
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  flex-wrap: wrap; /* allows stacking on smaller screens */
+  flex-wrap: wrap; 
 }
 
 #about h2 {
@@ -198,7 +200,7 @@
 
 .card {
   display: flex;
-  flex-direction: column; /* column layout */
+  flex-direction: column; 
   align-items: center;
   background: #f1f1f1;
   padding: 30px 20px;
@@ -213,7 +215,7 @@
 }
 
 .edu-logo {
-  width: 150px;  /* bigger logos */
+  width: 150px;  
   height: 150px;
   object-fit: contain;
   margin-bottom: 15px;
@@ -232,6 +234,59 @@
 
 .edu-text p {
   font-size: 16px;
+  color: #555;
+}
+
+/* Experience Section */
+#experience {
+  padding: 50px;
+  background: #f9f9f9;
+  
+}
+
+.section-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: green;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.experience-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.experience-card:hover {
+  background: #e0f5e0;
+  transform: translateY(-5px);
+}
+
+.exp-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.exp-details h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #111;
+}
+
+.exp-details p {
+  margin: 5px 0;
   color: #555;
 }
 
@@ -372,27 +427,7 @@
   color: #fff;
 }
 
-
-
-/* Contact Icons */
-.social-icons {
-  margin-top: 20px;
-}
-
-.social-icons a {
-  margin: 0 10px;
-  font-size: 24px;
-  color: #4CAF50;
-  transition: color 0.3s, transform 0.3s;
-}
-
-.social-icons a:hover {
-  color: #222;
-  transform: scale(1.2);
-}
-
-
-
+/* Projects Section */
 #projects {
   padding: 60px 20px;
   background: #f9f9f9;
@@ -440,6 +475,7 @@
   background: #333;
 }
 
+/* Contact Section */
 #contact{
     display: flex;
     flex-direction: column;
@@ -464,12 +500,19 @@
     margin-top: 20px;
 }
 
-.social-icons a{
-    font-size: 30px;
-    color: green;
-    transition: color 0.3s, transform 0.3s;
+.social-icons a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #4CAF50;
+  transition: color 0.3s, transform 0.3s;
 }
 
+.social-icons a:hover {
+  color: #222;
+  transform: scale(1.2);
+}
+
+/* Footer */
 .footer{
     text-align: center;
     padding: 20px;
@@ -498,10 +541,10 @@
 
     /* Nav adjustments */
     .nav-links {
-        display: none; /* hidden by default */
+        display: none; 
         flex-direction: column;
         position: absolute;
-        top: 70px; /* adjust if header taller/shorter */
+        top: 70px; 
         right: 20px;
         width: 220px;
         background: #333;
@@ -510,7 +553,7 @@
     }
 
     .nav-links.show {
-        display: flex; /* show when .show is added by JS */
+        display: flex; 
     }
 
     .nav-links li a {
@@ -535,7 +578,7 @@
     }
 }
 
-/* On bigger screens hide burger/close buttons */
+/* On bigger screens hide burger and close buttons */
 @media screen and (min-width: 769px) {
     .burger, .close {
         display: none;
