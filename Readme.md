@@ -6,7 +6,7 @@ This project showcases my **skills, education, experiences, certifications, and 
 
 
 ## 🌐 Live Demo
-👉 [View Website](https://your-username.github.io/your-repo-name/)
+👉 [View Website](https://stephenkinuthia-cell.github.io/My_Website/)
 
 
 
