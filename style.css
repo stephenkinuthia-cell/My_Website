@@ -492,6 +492,7 @@
     background-color: #f4f4f4;
     height: fit-content;
     padding: 40px 20px;
+    text-align: center;
 }
 
 #contact h2{
@@ -500,6 +501,35 @@
     padding-bottom: 20px;
 }
 
+/* Contact details (email & phone) */
+#contact p {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+#contact p a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+#contact p a i {
+    margin-right: 8px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+/* Hover effects for email & phone */
+#contact p a:hover {
+    color: #222;
+}
+
+#contact p a:hover i {
+    transform: scale(1.2);
+}
+
+/* Social icons */
 .social-icons{
     display: flex;
     justify-content: center;
@@ -519,6 +549,7 @@
   color: #222;
   transform: scale(1.2);
 }
+
 
 /* Footer */
 .footer{
