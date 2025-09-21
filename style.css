@@ -521,66 +521,82 @@
     margin-top: 20px;
 }
 
-@media screen and (max-width: 768px) {
-    #hero, #about {
-        flex-direction: column;
-        text-align: center;
-    }
+/* Tablet and below */
+@media screen and (max-width: 1024px) {
+  /* Show burger */
+  .burger {
+    display: block;
+    cursor: pointer;
+    font-size: 26px;
+    color: white;
+  }
 
-    .hero-photo, .hero-text, .about-image, .about-text {
-        width: 80%;
-    }
+  /* Hide normal logo (optional) */
+  .logo {
+    display: none;
+  }
 
-    .intro {
-        width: 80%;
-    }
+  /* Nav hidden by default */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #333;
+    border-radius: 8px;
+    padding: 15px 20px;
+  }
 
-    .more-info {
-        font-size: 30px;
-    }
+  /* Nav when open */
+  .nav-links.show {
+    display: flex;
+  }
 
-    /* Nav adjustments */
-    .nav-links {
-        display: none; 
-        flex-direction: column;
-        position: absolute;
-        top: 70px; 
-        right: 20px;
-        width: 220px;
-        background: #333;
-        border-radius: 8px;
-        padding: 15px 0;
-    }
+  .nav-links li a {
+    color: white;
+    padding: 12px;
+    display: block;
+    text-align: center;
+  }
 
-    .nav-links.show {
-        display: flex; 
-    }
+  /* Hero/About responsive layout */
+  #hero, #about, #education, #experience, #certifications, #skills, #projects {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
 
-    .nav-links li a {
-        color: white;
-        padding: 12px;
-        display: block;
-        text-align: center;
-    }
+  .hero-text, .hero-photo, .about-text, .about-image, .timeline, .experience-container, .cert-container {
+    width: 100%;
+    padding: 10px;
+  }
 
-    .burger {
-        display: block;
-        cursor: pointer;
-        font-size: 24px;
-        color: white;
-    }
-
-    .close {
-        display: none;
-        cursor: pointer;
-        font-size: 24px;
-        color: white;
-    }
+  .hero-text h1, .about-text h2, .section-title {
+    font-size: 28px;
+  }
 }
 
-/* On bigger screens hide burger and close buttons */
-@media screen and (min-width: 769px) {
-    .burger, .close {
-        display: none;
-    }
+/* Mobile-specific tweaks */
+@media screen and (max-width: 768px) {
+  .hero-text h1, .about-text h2, .section-title {
+    font-size: 24px;
+  }
+
+  .caption, .edu-text h3, .exp-details h3, .cert-text h3 {
+    font-size: 18px;
+  }
+
+  .more-info, .nav-links li a {
+    font-size: 16px;
+  }
+
+  button, .social-media a, .btn, .btn-verify {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
 }
